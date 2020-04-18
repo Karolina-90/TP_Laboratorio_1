@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1587170630 source:c:\users\monito titi\desktop\utn programación\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"Operaciones.h"
+
+1587167778 c:\users\monito titi\desktop\utn programación\calculadora\operaciones.h
+
+1587167756 source:c:\users\monito titi\desktop\utn programación\calculadora\operaciones.c
+	"Operaciones.h"
+
+1587249286 source:c:\users\monito titi\desktop\calculadora\operaciones.c
+	"Operaciones.h"
+
+1587234357 c:\users\monito titi\desktop\calculadora\operaciones.h
+
+1587252137 source:c:\users\monito titi\desktop\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<windows.h>
+	"Operaciones.h"
+
