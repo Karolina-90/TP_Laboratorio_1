@@ -43,11 +43,11 @@ float multiplicacion(float num1, float num2) {
 
 }
 
-float factorial(float num) {
+int factorial(float num) {
 
-    float resultado;
+    int resultado;
 
-    resultado = num;
+    resultado = (int)num;
 
         for(int i = 1; i < num; i++) {
         resultado = resultado * i;

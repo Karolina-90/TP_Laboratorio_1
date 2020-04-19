@@ -22,3 +22,15 @@
 	<windows.h>
 	"Operaciones.h"
 
+1587260500 source:d:\monkey\programación\eclipse-workspace\tp_laboratorio_1\operaciones.c
+	"Operaciones.h"
+
+1587260401 d:\monkey\programación\eclipse-workspace\tp_laboratorio_1\operaciones.h
+
+1587260736 source:d:\monkey\programación\eclipse-workspace\tp_laboratorio_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<windows.h>
+	"Operaciones.h"
+

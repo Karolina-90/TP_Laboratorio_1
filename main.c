@@ -8,7 +8,7 @@
 void MostrarMenu(float, float, int, int, int);
 int ErrorOpcion(int);
 float IngresoOperando(void);
-void MostrarResultados(float, float, float, float, float, float, float, float);
+void MostrarResultados(float, float, float, float, float, float, int, int);
 void MostrarCalculo(float, float);
 void MostrarLoading(int);
 
@@ -26,8 +26,8 @@ int main(void)
     float resultadoResta = 0;
     float resultadoDivide = 0;
     float resultadoMultiplica = 0;
-    float resultadoFactorialA= 0;
-    float resultadoFactorialB= 0;
+    int resultadoFactorialA= 0;
+    int resultadoFactorialB= 0;
     int flagA = 0;
     int flagB = 0;
     int flagYaCalculo = 0;
@@ -175,7 +175,7 @@ void MostrarMenu(float numA, float numB, int flagA, int flagB, int flagYaCalculo
         printf("      b) Calcular la resta (%.2f - %.2f)\n", numA, numB);
         printf("      c) Calcular la division (%.2f / %.2f) \n", numA, numB);
         printf("      d) Calcular la multiplicacion (%.2f * %.2f) \n", numA, numB);
-        printf("      e) Calcular el factorial (%.2f!) | (%.2f!)\n", numA, numB);
+        printf("      e) Calcular el factorial (%d!) | (%d!)\n", (int)numA, (int)numB);
     } else {
         printf("  3. Calcular todas las operaciones: \n");
         printf("      a) Calcular la suma.                           \n");
@@ -216,7 +216,7 @@ float IngresoOperando(void) {
 
 }
 
-void MostrarResultados(float num1, float num2, float resultadoSuma, float resultadoResta, float resultadoDivide, float resultadoMultiplica, float resultadoFactorialA, float resultadoFactorialB) {
+void MostrarResultados(float num1, float num2, float resultadoSuma, float resultadoResta, float resultadoDivide, float resultadoMultiplica, int resultadoFactorialA, int resultadoFactorialB) {
 
     printf("********************************************************\n");
     printf("                       CALCULADORA                                      \n");
@@ -235,15 +235,15 @@ void MostrarResultados(float num1, float num2, float resultadoSuma, float result
     printf("d) El resultado de %.2f * %.2f es: %.2f   \n", num1, num2, resultadoMultiplica);
 
     if (!(num1 < 1 )) {
-        printf("e) El factorial de %.2f es       : %.2f \n", num1, resultadoFactorialA);
+        printf("e) El factorial de %d es       : %d \n", (int)num1, resultadoFactorialA);
     } else {
-        printf("e) El factorial de %.2f es       : No es posible operar con 0 y/o negativos\n", num1);
+        printf("e) El factorial de %d es       : No es posible operar con 0 y/o negativos\n", (int)num1);
     }
 
     if(!(num2 < 1)) {
-        printf(    "   El factorial de %.2f es       : %.2f  \n\n", num2, resultadoFactorialB);
+        printf(    "   El factorial de %d es       : %d  \n\n", (int)num2, resultadoFactorialB);
      }else {
-        printf(    "   El factorial de %.2f es        : No es posible operar con 0 y/o negativos\n\n", num2);
+        printf(    "   El factorial de %d es        : No es posible operar con 0 y/o negativos\n\n", (int)num2);
      }
     printf("********************************************************\n\n");
     }
@@ -257,7 +257,7 @@ void MostrarCalculo(float num1, float num2) {
     printf("      b) Calculando la resta... (%.2f - %.2f)\n", num1, num2);
     printf("      c) Calculando la division... (%.2f / %.2f) \n", num1, num2);
     printf("      d) Calculando la multiplicacion... (%.2f * %.2f) \n", num1, num2);
-    printf("      e) Calculando el factorial... (%.2f!) | (%.2f!)  \n\n\n", num1, num2);
+    printf("      e) Calculando el factorial... (%d!) | (%d!)  \n\n\n", (int)num1, (int)num2);
     printf("********************************************************\n");
 }
 

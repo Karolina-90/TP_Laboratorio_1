@@ -15,5 +15,5 @@ float division(float, float);
 
 float multiplicacion(float, float);
 
-float factorial(float);
+int factorial(float);
 
